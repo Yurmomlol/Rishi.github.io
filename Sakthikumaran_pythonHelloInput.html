@@ -1,0 +1,33 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww25100\viewh12880\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang=\'93en\'94>\
+         <head>\
+                 <link rel=\'93stylesheet\'94 href=\'93https://pyscript.net/latest/pyscript.css\'94 />\
+                 <script defer src=\'93https://pyscript.net/latest/pyscript.js\'94></script>\
+                 <style>\
+                         label \{ \
+                                Display:block;\
+                         \}\
+                 </style>\
+        </head>\
+        <body>\
+                <form>\
+                        <label for=\'93operandOne\'94>X:</label><input name=\'93operandOne\'94 id=\'93operandOne\'94 value=\'9310\'94>\
+\
+                        <label for=\'93total\'94>Result:</label><div name=\'93total\'94 id=\'93total\'94></div>\
+                </form>\
+                <py-script>\
+                input_box = Element(\'93operandOne\'94)\
+                operandOne = float(input_box.value)\
+                result = Element(\'93total\'94)\
+                result.write(\'93Hello! The input says:\'94 + str(operandOne))\
+\
+                </py-script>\
+       </body>\
+</html>}
